@@ -49,8 +49,8 @@ export default () => (
         <Aleatorio min={0} max={20} /> 
 */}
    
-        <Contador  style={ estilo.TxG} inicial={100}/>
-    
+        <Contador  style={ estilo.TxG} inicial={100} passo={13}/>
+        <Contador />
     </View>
 )
 
