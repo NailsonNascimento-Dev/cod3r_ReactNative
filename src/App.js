@@ -3,6 +3,12 @@ import { Text, View, StyleSheet } from "react-native";
 import Primeiro from './components/Primeiro';
 import CompPadrao, { Comp1, Comp2 } from './components/Mult';
 
+import MinMax from "./components/MinMax";
+import Aleatorio from "./components/Aleatorio";
+import Botao from "./components/Botao";
+import Contador from "./components/Contador";
+import estilo from "./components/estilo";
+
 
 //declaração de função 
 /*function App(){
@@ -27,11 +33,24 @@ export default function(){
 //ctrl + ; 
 //componente funcional 2
 export default () => ( 
+    
     <View style={style.App}>
         {/* <Text>{ 1 + 3 }</Text> */}
-        <CompPadrao />
+        {/* <MinMax min="3" max="20" /> */}
+        {/* <CompPadrao />
         <Comp1 />
-        <Primeiro  /> 
+        <Primeiro  />  */}
+        {/*//////////////////////////////////////*/}
+
+        {/* <Aleatorio min={0} max={20} />
+        <Aleatorio min={0} max={20} />
+        <Aleatorio min={0} max={20} />
+        <Aleatorio min={0} max={20} />
+        <Aleatorio min={0} max={20} /> 
+*/}
+   
+        <Contador  style={ estilo.TxG} inicial={100}/>
+    
     </View>
 )
 
@@ -41,6 +60,7 @@ const style = StyleSheet.create({
         flexGrow: 1,
         justifyContent: "center",
         alignItems: "center",
+        padding: 20
     }
-
+    
 })
